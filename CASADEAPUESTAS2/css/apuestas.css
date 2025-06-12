@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(90deg, #1e1e1e, #2a2a2a);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid gold;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: gold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px; /* Ajusta el tamaño de la letra */
+    transition: color 0.3s;
+}
+
+/* Contenedor de la tabla */
+.tabla-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Título del evento */
+.titulo-evento {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    padding: 10px 0;
+    border-bottom: 3px solid #007bff;
+}
+
+/* Estilos generales para la tabla */
+.tabla-apuestas {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Encabezados de la tabla */
+.tabla-apuestas thead {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.tabla-apuestas th, .tabla-apuestas td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+/* Color de los números y fechas para mejor visibilidad */
+.tabla-apuestas td {
+    color: #222; /* Un color más oscuro para mejor contraste */
+}
+
+/* Alternar colores en filas */
+.tabla-apuestas tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Efecto hover */
+.tabla-apuestas tbody tr:hover {
+    background-color: #e0e0e0;
+    transition: 0.3s;
+}
+
+/* Mensaje cuando no hay apuestas */
+.mensaje-vacio {
+    text-align: center;
+    font-size: 1.2em;
+    color: #777;
+    margin-top: 20px;
+}
+
+/* Ajuste responsivo */
+@media (max-width: 768px) {
+    .tabla-container {
+        width: 95%;
+    }
+
+    .tabla-apuestas th, .tabla-apuestas td {
+        padding: 8px;
+    }
+}
+
+
+footer {
+    background: #1e1e1e;
+    padding: 20px;
+    color: gold;
+}
+
+.mensaje-aviso {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+    padding: 15px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.mensaje-aviso .cerrar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #856404;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.mensaje-aviso .cerrar:hover {
+    color: #000;
+}
+
+ /* Estilos para el botón de Retirar */
+.btn-retirar {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn-retirar:hover {
+    background-color: #e67e22;
+}
+

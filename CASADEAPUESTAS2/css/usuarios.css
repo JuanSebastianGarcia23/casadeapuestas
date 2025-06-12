@@ -1,0 +1,117 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(90deg, #1e1e1e, #2a2a2a);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid gold;
+}
+
+header h1 {
+    font-size: 20px;
+    margin: 0;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.usuario {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo de la tabla */
+section.usuarios {
+    width: 85%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #1c1c1c;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    overflow-x: auto;
+}
+
+section.usuarios table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 12px;
+    background-color: transparent;
+}
+
+section.usuarios thead th {
+    padding: 12px 16px;
+    background-color: #2a2a2a;
+    color: gold;
+    font-weight: bold;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 8px;
+    letter-spacing: 0.5px;
+}
+
+section.usuarios tbody td {
+    padding: 12px 16px;
+    background-color: #1e1e1e;
+    color: white;
+    font-size: 0.9em;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+}
+
+section.usuarios tbody tr:hover td {
+    background-color: #ff7043;
+    color: white;
+    transform: scale(1.01);
+}
+
+/* Pie de página */
+footer {
+    background: #1e1e1e;
+    color: gold;
+    padding: 20px;
+    border-top: 2px solid gold;
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    section.usuarios {
+        width: 95%;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .usuario {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+}
+

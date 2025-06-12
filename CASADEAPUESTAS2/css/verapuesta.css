@@ -1,0 +1,186 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(90deg, #1e1e1e, #2a2a2a);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid gold;
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em; /* Ajuste más pequeño que 0.95em */
+}
+
+
+/* Contenedor de la tabla */
+.tabla-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+/* Estilos generales para la tabla */
+.tabla-apuestas {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #333333; /* Oscuro pero más llamativo */
+}
+
+/* Encabezados de la tabla */
+.tabla-apuestas thead {
+    background-color: gold; /* Color naranja brillante para un buen contraste */
+    color: white;
+    font-weight: bold;
+}
+
+/* Estilos de las celdas de la tabla */
+.tabla-apuestas th, .tabla-apuestas td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #444;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #f9f9f9;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Alternar colores en filas */
+.tabla-apuestas tbody tr:nth-child(even) {
+    background-color: #555555; /* Color gris más intenso para filas pares */
+}
+
+.tabla-apuestas tbody tr:nth-child(odd) {
+    background-color: #424242; /* Gris oscuro para filas impares */
+}
+
+/* Efecto hover sobre las filas */
+.tabla-apuestas tbody tr:hover {
+    background-color: #ff7043; /* Naranja más brillante para el hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.02);
+}
+
+/* Efecto hover en las celdas */
+.tabla-apuestas td:hover {
+    background-color: #ffccbc; /* Naranja claro para el hover de celdas */
+    transform: scale(1.05);
+}
+
+/* Mensaje cuando no hay apuestas */
+.mensaje-vacio {
+    text-align: center;
+    font-size: 1.2em;
+    color: #bbb;
+    margin-top: 20px;
+}
+
+/* Ajuste responsivo */
+@media (max-width: 768px) {
+    .tabla-container {
+        width: 95%;
+    }
+
+    .tabla-apuestas th, .tabla-apuestas td {
+        padding: 10px;
+    }
+}
+
+
+.btn-actualizar {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 3px 6px;
+    font-size: 13px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-actualizar:hover {
+    background-color: #218838;
+}
+
+.input-resultado {
+    width: 80px;
+    padding: 3px;
+    font-size: 13px;
+}
+
+.tabla-apuestas td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.form-resultado {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.resultado-final {
+    font-weight: bold;
+    font-size: 16px;
+    color: #fffafa;
+}
+
+footer {
+    background: #1e1e1e;
+    color: gold;
+    padding: 20px;
+    border-top: 2px solid gold;
+    margin-top: 40px;
+}
+
+/* Estilo para el botón de eliminar */
+button.btn-eliminar {
+    background-color: #ff5722; /* Naranja brillante */
+    color: rgb(44, 79, 235);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover sobre el botón de eliminar */
+button.btn-eliminar:hover {
+    background-color: #ff7043; /* Naranja más brillante */
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Efecto focus sobre el botón de eliminar */
+button.btn-eliminar:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 87, 34, 0.8); /* Naranja con foco */
+}
+

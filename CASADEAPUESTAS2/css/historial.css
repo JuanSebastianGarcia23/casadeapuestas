@@ -1,0 +1,56 @@
+/* Estilos para el historial de ganancias */
+
+.contenedor {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+}
+
+.historial h2 {
+    color: gold;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.tabla-container {
+    overflow-x: auto;
+}
+
+.tabla-historial {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabla-historial th, .tabla-historial td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #444;
+    color: white;
+}
+
+.tabla-historial th {
+    background-color: #333;
+    color: gold;
+    font-weight: bold;
+}
+
+.tabla-historial tr:nth-child(even) {
+    background-color: #2a2a2a;
+}
+
+.tabla-historial tr:hover {
+    background-color: #3a3a3a;
+}
+
+.total-dinamico {
+    font-size: 24px;
+    color: #00ff88;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+

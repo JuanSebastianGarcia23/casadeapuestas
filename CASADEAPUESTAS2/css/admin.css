@@ -1,0 +1,203 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(90deg, #1e1e1e, #2a2a2a);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid gold;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: gold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: gold;
+}
+
+/* Sección de apuestas */
+.apuestas {
+    padding: 40px;
+    background: #222;
+    margin: 30px auto;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.apuestas h2 {
+    color: gold;
+    margin-bottom: 30px;
+}
+
+.torneo {
+    background-color: #1a1a1a;
+    border: 2px solid gold;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 30px auto;
+    width: 90%;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.torneo:hover {
+    transform: scale(1.01);
+}
+
+.torneo h3 {
+    font-size: 22px;
+    color: gold;
+    margin-bottom: 20px;
+    border-bottom: 1px solid gold;
+    padding-bottom: 10px;
+}
+
+
+.apuestas h3 {
+    color: #fff;
+    margin-top: 40px;
+}
+
+/* Contenedor de eventos */
+.eventos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Diseño de cada evento */
+.evento {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.evento h4 {
+    font-size: 18px;
+    color: gold;
+    margin-bottom: 10px;
+}
+
+.evento p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Efecto hover */
+.evento:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.5);
+}
+
+/* Contenedor de botones */
+.evento .botones {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Botón base */
+.evento button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Botón Editar */
+.editar-btn {
+    background-color: #007bff; /* Azul */
+}
+
+.editar-btn:hover {
+    background-color: #3399ff;
+    transform: translateY(-2px);
+}
+
+/* Botón Eliminar */
+.eliminar-btn {
+    background-color: #dc3545; /* Rojo */
+}
+
+.eliminar-btn:hover {
+    background-color: #ff4d5e;
+    transform: translateY(-2px);
+}
+
+.agregar-btn {
+    background: linear-gradient(135deg, #222, #444);
+    color: gold;
+    border: 2px solid gold;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2);
+}
+
+.agregar-btn:hover {
+    background: linear-gradient(135deg, #444, #111);
+    color: white;
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 6px 12px rgba(255, 215, 0, 0.4);
+}
+
+
+/* Pie de página */
+footer {
+    background: #1e1e1e;
+    color: gold;
+    padding: 20px;
+    border-top: 2px solid gold;
+    margin-top: 40px;
+}
+/* Estilos del modal */

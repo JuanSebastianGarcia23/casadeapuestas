@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(90deg, #1e1e1e, #2a2a2a);
+    color: white;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid gold;
+    height: 60px;
+}
+
+header h1 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.header-center {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+}
+
+.usuario a {
+    color: red;
+    text-decoration: none;
+}
+
+.usuario a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333; /* Color para los subtítulos */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    color: #333; /* Color para el texto dentro de la tabla */
+}
+
+table th {
+    background-color: #333;
+    color: #f4f7f6; /* Color blanco para los encabezados de la tabla */
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+h3.titulo-evento {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.mensaje-aviso {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.mensaje-aviso .cerrar {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.mensaje-vacio {
+    font-size: 1.2em;
+    color: #999; /* Color gris claro para los mensajes vacíos */
+    text-align: center;
+}
+
+.total-y-boton {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.total-y-boton table {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.total-y-boton td {
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: right;
+    color: #333; /* Color de texto dentro de las celdas */
+}
+
+.total-y-boton td strong {
+    font-weight: bold;
+}
+
